@@ -12,7 +12,7 @@ const dataSpirit = `test2`
 const dataRoman = `test3`
 const dataCassidy = `test4`
 
-const imgLaurence = '/media/laurencetransparent.png'
+const imgLaurence = 'media/laurencetransparent.png'
 const imgSpirit = ''
 const imgRoman = ''
 const imgCassidy = ''
@@ -49,13 +49,13 @@ function drawC(sound) {
         item.addEventListener("click", open.bind(this, i));
     }
     if (sound) {
-        let audio = new Audio('/media/buttonlow.wav');
+        let audio = new Audio('media/buttonlow.wav');
         audio.play();
     }
 }
 
 function open(index) {
-    let audio = new Audio('/media/buttonhigh.wav');
+    let audio = new Audio('media/buttonhigh.wav');
     audio.play();
     const target = document.getElementById("main");
     $('span').remove();
